@@ -6,13 +6,13 @@ Simple PHP code
 
 	$response = new Response;
 	$response->data([
-		'event_id'=>$db->lastID(), 
-		'event'=>$data['event'], 
-		'recipient'=>$data['recipient']
+		'event_id'=>2, 
+		'event'=>'event', 
+		'recipient'=>'somebody@example.com'
 	]);
 	return $response->generate();
 	
-Return JSON string 
+Returns JSON string formated in JSend specification format
 
 	{
 		status : "success",
